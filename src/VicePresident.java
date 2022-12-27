@@ -11,8 +11,10 @@ class VicePresident extends Manager {
     VicePresident(String name) {
         super(name); // Access Parent Constructor
     }
-
-    void sayHello(String name) {
-        System.out.println("Hello " + name + ", My Name is VP " + this.name);
+  
+    void sayHello(String name){
+      System.out.println("Hi " + name + ", My Name Is VP " + this.name);
     }
-}
+  
+  }
+  
