@@ -14,6 +14,16 @@ class Person {
     final String country = "Indonesia";
 
     /*
+     * This is a class constructor
+     * Constructor name must be same with Class Name
+     * Constructor is to set properties right after the object class is created!
+     */
+    Person(String paramName, String paramAddress) {
+        name = paramName;
+        address = paramAddress;
+    }
+
+    /*
      * This is Class Method. can be called with
      * init object first inside a variable.
      */
