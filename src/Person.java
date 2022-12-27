@@ -17,10 +17,19 @@ class Person {
      * This is a class constructor
      * Constructor name must be same with Class Name
      * Constructor is to set properties right after the object class is created!
+     * Able to Overloading (create same method but with diff properties or param)
      */
     Person(String paramName, String paramAddress) {
         name = paramName;
         address = paramAddress;
+    }
+
+    Person(String paramName) {
+        this(paramName, null);
+    }
+
+    Person() {
+        this(null);
     }
 
     /*

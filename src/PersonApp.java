@@ -8,6 +8,9 @@ public class PersonApp {
          */
         var person1 = new Person("John Doe","Venice");
         Person person2 = new Person("Will Smith", "Hollywood");
+        var person3 = new Person();
+        person3.name = "James Jone";
+        person3.address = "Octagon";
 
         /*
          * The class field can be modified each object separate
@@ -20,5 +23,8 @@ public class PersonApp {
          */
         person1.sayHello("Johnny");
         person2.sayHello("Sean");
+        person3.sayHello("Mark");
+
+
     }
 }
