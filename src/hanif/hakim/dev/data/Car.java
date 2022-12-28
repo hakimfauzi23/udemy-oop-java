@@ -9,4 +9,9 @@ public interface Car extends HasBrand, isMaintenance {
     void drive();
 
     int getTire();
+
+    // This is default Method (Only Java 8 Higher!)
+    default boolean isBig() {
+        return false;
+    }
 }
