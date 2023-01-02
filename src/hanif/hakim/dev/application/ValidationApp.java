@@ -12,9 +12,12 @@ public class ValidationApp {
             ValidationUtil.validate(loginRequest);
             System.out.println("Data Valid");
         } catch (ValidationException | NullPointerException  exception) {
-            System.out.println("Data tidak valid: " + exception.getMessage());
+            System.out.println("Dat a tidak valid: " + exception.getMessage());
         } finally {
             System.out.println("Always be executed");
         }
+
+        LoginRequest loginRequest2 = new LoginRequest(null, null);
+        ValidationUtil.validateRuntime(loginRequest2);
     }
 }
